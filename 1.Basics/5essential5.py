@@ -11,7 +11,7 @@ def rescaleFrame(frame, scale=0.75):
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 
-img = rescaleFrame(cv.imread('Basics/Images/cuteCat.jpg'), .5)
+img = rescaleFrame(cv.imread('../Images/cuteCat.jpg'), .5)
 cv.imshow("Cuteee Cat", img)
 
 # Converting to grayscale

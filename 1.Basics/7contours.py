@@ -12,7 +12,7 @@ def rescaleFrame(frame, scale=0.75):
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 
-img = rescaleFrame(cv.imread('Basics/Images/thumbs_up_down.jpg'))
+img = rescaleFrame(cv.imread('../Images/thumbs_up_down.jpg'))
 cv.imshow('Cute Cat', img)
 
 blank = np.zeros(img.shape, dtype='uint8')

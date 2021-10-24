@@ -1,7 +1,10 @@
 import cv2 as cv
 
 # Reading Videos
-capture = cv.VideoCapture('Basics/Videos/catVideo.mp4')
+# this function takes in a parameter
+# -> Path of the video
+# -> 0, 1, 2 - the video source of webcam or USB cam
+capture = cv.VideoCapture('../Videos/catVideo.mp4')
 
 # Loop through each frame to display it
 while True:

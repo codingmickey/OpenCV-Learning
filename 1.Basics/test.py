@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 
-img = cv.imread('Basics/Images/thumbs_up_down.jpg')
+img = cv.imread('../Images/thumbs_up_down.jpg')
 # cv.imshow('Cute Cat', img)
 
 blur = cv.GaussianBlur(img, (0, 0), cv.BORDER_DEFAULT)
@@ -19,6 +19,8 @@ tresh1 = cv.cvtColor(thresh, cv.COLOR_GRAY2BGR)
 both = np.hstack((blur, tresh1))
 
 cv.imshow('Both', both)
+
+cv.imwrite('Combined Image.jpg', both)
 
 
 cv.waitKey(0)
