@@ -13,7 +13,7 @@ def rescaleFrame(frame, scale=0.75):
 
 
 img = rescaleFrame(cv.imread('../Images/thumbs_up_down.jpg'))
-cv.imshow('Cute Cat', img)
+cv.imshow('Raw', img)
 
 blank = np.zeros(img.shape, dtype='uint8')
 cv.imshow('Blank', blank)
@@ -50,5 +50,6 @@ print(f'{len(contours)} contour(s) found')
 cv.drawContours(img, contours, -1, (0, 255, 0), 2)
 cv.imshow('Contours drawn', img)
 
+cv.imwrite('Contours.jpg', img)
 
 cv.waitKey(0)
